@@ -124,3 +124,45 @@ main{
     background:#d32f2f;
 
     transition:.3
+    
+.appName{
+
+    color:#d32f2f;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:15px;
+
+}
+
+.appTitle{
+
+    font-size:38px;
+
+    margin-top:3px;
+
+    margin-bottom:18px;
+
+}
+
+#dateTime{
+
+    color:#999;
+
+    margin-top:10px;
+
+}
+
+.divider{
+
+    height:1px;
+
+    background:#2d2d2d;
+
+    margin:24px 0;
+
+}
