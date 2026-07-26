@@ -92,3 +92,32 @@ const streak = document.getElementById("streak");
 let streakDays = Number(localStorage.getItem("streak")) || 0;
 
 streak.textContent = streakDays + " Days";
+
+// Live Date & Time
+
+const dateTime = document.getElementById("dateTime");
+
+function updateClock(){
+
+    const now = new Date();
+
+    const options = {
+        weekday: "long",
+        month: "long",
+        day: "numeric"
+    };
+
+    const date = now.toLocaleDateString(undefined, options);
+
+    const time = now.toLocaleTimeString([],{
+        hour:"numeric",
+        minute:"2-digit"
+    });
+
+    dateTime.textContent = `${date} • ${time}`;
+
+}
+
+updateClock();
+
+setInterval(updateClock,1000);
