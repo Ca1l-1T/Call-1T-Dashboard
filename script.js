@@ -121,3 +121,48 @@ function updateClock(){
 updateClock();
 
 setInterval(updateClock,1000);
+
+// Today's Focus
+
+const focus = document.getElementById("todayFocus");
+const description = document.getElementById("focusDescription");
+
+const weekday = new Date().getDay();
+
+switch(weekday){
+
+case 1:
+focus.textContent="Recovery & Mobility";
+description.textContent="Recover from training. Stretch, hydrate, and prepare for the week.";
+break;
+
+case 2:
+focus.textContent="Upper Body Weights";
+description.textContent="Baseball lifting day. Focus on good form and controlled reps.";
+break;
+
+case 3:
+focus.textContent="Explosive Power";
+description.textContent="Medicine balls, battle ropes, and athletic movement.";
+break;
+
+case 4:
+focus.textContent="Leg Day";
+description.textContent="Build lower-body strength and don't skip stretching.";
+break;
+
+case 5:
+focus.textContent="Recovery Run";
+description.textContent="Stay consistent and recover for the weekend.";
+break;
+
+case 6:
+focus.textContent="Personal Training";
+description.textContent="Work on any area you'd like to improve.";
+break;
+
+default:
+focus.textContent="Rest Day";
+description.textContent="Recharge and get ready for the upcoming week.";
+
+}
