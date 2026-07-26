@@ -166,3 +166,27 @@ main{
     margin:24px 0;
 
 }
+
+.focusCard{
+
+    background:linear-gradient(145deg,#7f1d1d,#3d0a0a);
+
+    border:none;
+
+}
+
+.focusCard h2{
+
+    margin:12px 0;
+
+    font-size:30px;
+
+}
+
+#focusDescription{
+
+    color:#ddd;
+
+    line-height:1.6;
+
+}
